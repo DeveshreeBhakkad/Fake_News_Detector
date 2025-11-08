@@ -1,0 +1,12 @@
+plotly
+nbformat
+nltk
+spacy
+wordcloud
+gensim
+tensorflow
+pandas
+numpy
+matplotlib
+seaborn
+jupyterthemes
