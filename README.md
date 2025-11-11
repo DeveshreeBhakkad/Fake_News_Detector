@@ -12,12 +12,12 @@ Train, test, and evaluate your dataset — all from a simple, powerful terminal 
 
 ✨ **Features**
 
-🔑 User Authentication – Register & login securely (passwords hashed with bcrypt)  
-💵 Income & Expense Tracking – Add, view, and delete transactions with categories  
-📊 Reports – Generate Monthly & Yearly summaries (Income, Expenses, Savings)  
-🎯 Budgeting – Set monthly budgets & receive warnings if exceeded  
-💾 Data Persistence – All data stored in SQLite database  
-🗄 Backup & Restore – Create timestamped backups & restore anytime  
+- 🔑 User Authentication – Register & login securely (passwords hashed with bcrypt)  
+- 💵 Income & Expense Tracking – Add, view, and delete transactions with categories  
+- 📊 Reports – Generate Monthly & Yearly summaries (Income, Expenses, Savings)  
+- 🎯 Budgeting – Set monthly budgets & receive warnings if exceeded  
+- 💾 Data Persistence – All data stored in SQLite database  
+- 🗄 Backup & Restore – Create timestamped backups & restore anytime  
 
 
 📂 **Project Structure**
