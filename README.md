@@ -28,21 +28,22 @@ Train, test, and evaluate your dataset — all from a simple, powerful terminal 
 │── model/                
 │── graphs/               
 │── README.md             
-└── requirements.txt      
+└── requirements.txt    
+
 ⚙️ Installation & Setup
 
 1️⃣ Clone the repository
-git clone https://github.com/DeveshreeBhakkad/Fake_News_Detector.git
-cd Fake_News_Detector
+       git clone https://github.com/DeveshreeBhakkad/Fake_News_Detector.git
+       cd Fake_News_Detector
 
 2️⃣ Install dependencies
-pip install -r requirements.txt
+       pip install -r requirements.txt
 
 Or install manually:
-pip install tensorflow nltk pandas numpy matplotlib scikit-learn
+       pip install tensorflow nltk pandas numpy matplotlib scikit-learn
 
 3️⃣ Run the project
-python main.py
+       python main.py
 
 🎮 Usage Guide
 
