@@ -93,11 +93,13 @@ _All these visualizations are generated during runtime using Matplotlib._
 ## 🧮 Example Output
 
 Epoch 1/5
+```bash
 acc: 0.9877 - loss: 0.0330 - val_acc: 0.9989 - val_loss: 0.0044
-
+```
 Epoch 2/5
+```bash
 acc: 0.9991 - loss: 0.0011 - val_acc: 0.9998 - val_loss: 0.0023
-
+```
 Final Model Accuracy: 80%
 
 
@@ -117,11 +119,7 @@ nltk.download('punkt_tab')
 ⚠️ If TensorFlow shows oneDNN optimization warnings — it’s safe to ignore.
 
 🌟 Future Improvements
-
-🧾 Save model and use it for real-time fake news prediction
-
-🌐 Deploy as a web app (Flask/Streamlit)
-
-📄 Add dataset link or upload to Kaggle
-
-📊 Add more visualizations and performance comparisons
+- 🧾 Save model and use it for real-time fake news prediction
+- 🌐 Deploy as a web app (Flask/Streamlit)
+- 📄 Add dataset link or upload to Kaggle
+- 📊 Add more visualizations and performance comparisons
