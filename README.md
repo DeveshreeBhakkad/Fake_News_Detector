@@ -21,15 +21,15 @@ Train, test, and evaluate your dataset — all from a simple, powerful terminal 
 
 
 
-📂 Project Structure
-Fake_News_Detector/
-│── main.py                 # Main script (run this file)
-│── dataset.csv             # News dataset (optional / to be added)
-│── model/                  # Saved model files (after training)
-│── graphs/                 # Visualizations & plots
-│── README.md               # Project documentation
-└── requirements.txt        # Python dependencies
+📂 **Project Structure**
 
+│Fake_News_Detector/
+│── main.py               # Main script (run this file)
+│── dataset.csv           # News dataset (optional / to be added)
+│── model/                # Saved model files (after training)
+│── graphs/               # Visualizations & plots
+│── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
@@ -50,11 +50,11 @@ python main.py
 
 🧩 Training
      Automatically preprocesses data (cleaning, stemming, vectorizing).
-    Trains ML models and saves them as .pkl files.
+     Trains ML models and saves them as .pkl files.
 
 🔍 Prediction
-    Enter a news headline or paragraph.
-    The system predicts whether it’s REAL or FAKE.
+     Enter a news headline or paragraph.
+     The system predicts whether it’s REAL or FAKE.
 
 📊 Model Evaluation
      Displays accuracy score.
@@ -73,19 +73,18 @@ Shows confusion matrix and precision-recall metrics.
 
 
 📊 Sample Visualizations
-
-  🟦 Distribution of Fake vs Real News
-  🟩 Number of Articles per Subject
-  🟨 Word Count per Article
-  📉 Training vs Validation Accuracy Graph
-
-
+     🟦 Distribution of Fake vs Real News
+     🟩 Number of Articles per Subject
+     🟨 Word Count per Article
+     📉 Training vs Validation Accuracy Graph
 All these visualizations are generated during runtime using Matplotlib.
 
 
 🧮 Example Output
+
 Epoch 1/5
 acc: 0.9877 - loss: 0.0330 - val_acc: 0.9989 - val_loss: 0.0044
+
 Epoch 2/5
 acc: 0.9991 - loss: 0.0011 - val_acc: 0.9998 - val_loss: 0.0023
 
