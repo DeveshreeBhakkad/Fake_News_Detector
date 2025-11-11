@@ -22,13 +22,13 @@ Train, test, and evaluate your dataset — all from a simple, powerful terminal 
 
 📂 **Project Structure**
 
-│Fake_News_Detector
-│── main.py               
-│── dataset.csv          
-│── model/                
-│── graphs/               
-│── README.md             
-└── requirements.txt    
+Fake_News_Detector/
+│── main.py                # Main script (run this file)
+│── dataset.csv            # News dataset (optional / to be added)
+│── model/                 # Saved model files (after training)
+│── graphs/                # Visualizations & plots
+│── README.md              # Project documentation
+└── requirements.txt       # Python dependencies    
 ## 🛠 Installation & Setup
 
 1️⃣ Clone the repository:
@@ -50,20 +50,20 @@ Or install manually:
 ```bash
        python main.py
 ```
-🎮 Usage Guide
+## 🎮 Usage Guide
 
-🧩 Training
-     Automatically preprocesses data (cleaning, stemming, vectorizing).
-     Trains ML models and saves them as .pkl files.
+- 🧩 **Training**  
+  Automatically preprocesses data (cleaning, stemming, vectorizing).  
+  Trains ML models and saves them as `.pkl` files.  
 
-🔍 Prediction
-     Enter a news headline or paragraph.
-     The system predicts whether it’s REAL or FAKE.
+- 🔍 **Prediction**  
+  Enter a news headline or paragraph.  
+  The system predicts whether it’s **REAL** or **FAKE**.  
 
-📊 Model Evaluation
-     Displays accuracy score.
+- 📊 **Model Evaluation**  
+  Displays accuracy score.  
+  Shows confusion matrix and precision–recall metrics.  
 
-Shows confusion matrix and precision-recall metrics.
 
 🧩 How It Works
 
@@ -109,6 +109,7 @@ nltk.download('punkt')
 nltk.download('stopwords')  
 nltk.download('wordnet')  
 nltk.download('punkt_tab')
+```
 ⚠️ If TensorFlow shows oneDNN optimization warnings — it’s safe to ignore.
 
 🌟 Future Improvements
