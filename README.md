@@ -5,7 +5,7 @@
 
 📰 Fake News Detector
 
-“Don’t believe everything you read — let AI tell you the truth.”
+> “Don’t believe everything you read — let AI tell you the truth.”
 
 A Python-based machine learning application that detects whether a news article is real or fake using Natural Language Processing (NLP) and classification models.
 Train, test, and evaluate your dataset — all from a simple, powerful terminal interface.
