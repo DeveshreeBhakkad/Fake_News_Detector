@@ -11,31 +11,29 @@ A Python-based machine learning application that detects whether a news article 
 Train, test, and evaluate your dataset — all from a simple, powerful terminal interface.
 
 ✨ Features
-
-🧠 Deep Learning Model – Bidirectional LSTM-based classifier built with TensorFlow/Keras
-🧹 Text Preprocessing – Tokenization, stopword removal, lemmatization using NLTK
-🧾 Data Visualization – Word distributions, fake vs real ratios, and subject analysis
-📊 Performance Metrics – Accuracy, confusion matrix, and classification report
-💾 Dataset Handling – Reads and cleans raw CSV datasets
-📈 Training Visualization – Training and validation accuracy/loss graphs
+    🧠 Deep Learning Model – Bidirectional LSTM-based classifier built with TensorFlow/Keras
+    🧹 Text Preprocessing – Tokenization, stopword removal, lemmatization using NLTK
+    🧾 Data Visualization – Word distributions, fake vs real ratios, and subject analysis
+    📊 Performance Metrics – Accuracy, confusion matrix, and classification report
+    💾 Dataset Handling – Reads and cleans raw CSV datasets
+    📈 Training Visualization – Training and validation accuracy/loss graphs
 
 
 
 📂 **Project Structure**
 
 │Fake_News_Detector/
-│── main.py               # Main script (run this file)
-│── dataset.csv           # News dataset (optional / to be added)
-│── model/                # Saved model files (after training)
-│── graphs/               # Visualizations & plots
-│── README.md             # Project documentation
-└── requirements.txt      # Python dependencies
-
+│── main.py               
+│── dataset.csv          
+│── model/                
+│── graphs/               
+│── README.md             
+└── requirements.txt      
 ⚙️ Installation & Setup
+
 1️⃣ Clone the repository
 git clone https://github.com/DeveshreeBhakkad/Fake_News_Detector.git
 cd Fake_News_Detector
-
 
 2️⃣ Install dependencies
 pip install -r requirements.txt
