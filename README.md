@@ -22,14 +22,17 @@ Train, test, and evaluate your dataset — all from a simple, powerful terminal 
 
 📂 **Project Structure**
 
+```
 Fake_News_Detector/
-│── main.py                # Main script (run this file)
-│── dataset.csv            # News dataset (optional / to be added)
-│── model/                 # Saved model files (after training)
-│── graphs/                # Visualizations & plots
-│── README.md              # Project documentation
-└── requirements.txt       # Python dependencies  
-  
+│── main.py               # Main script (run this file)
+│── dataset.csv           # News dataset (optional / to be added)
+│── model/                # Saved model files (after training)
+│── graphs/               # Visualizations & plots
+│── README.md             # Project documentation
+└── requirements.txt      # Python dependencies
+```
+
+
 ## 🛠 Installation & Setup
 
 1️⃣ Clone the repository:
