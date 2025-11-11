@@ -28,7 +28,8 @@ Fake_News_Detector/
 │── model/                 # Saved model files (after training)
 │── graphs/                # Visualizations & plots
 │── README.md              # Project documentation
-└── requirements.txt       # Python dependencies    
+└── requirements.txt       # Python dependencies  
+  
 ## 🛠 Installation & Setup
 
 1️⃣ Clone the repository:
