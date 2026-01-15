@@ -91,6 +91,30 @@ A binary label is created:
 
 ---
 
+## ✅ Final Model Selection
+
+Three models were evaluated for the fake news classification task:
+
+- **Multinomial Naive Bayes**
+- **TF-IDF + Logistic Regression**
+- **Bidirectional LSTM (Deep Learning)**
+
+Although the BiLSTM model achieved very low training loss, it showed signs of overfitting as validation loss increased across epochs.
+
+The **TF-IDF + Logistic Regression** model achieved the best balance of performance and generalization, with approximately **99% accuracy** and strong precision–recall scores on unseen test data.
+
+Due to its:
+- Superior generalization
+- Lower computational complexity
+- Faster training and inference
+- Better interpretability
+
+**TF-IDF + Logistic Regression was selected as the final production-ready model.**
+
+The BiLSTM model is retained in this project for experimental comparison and learning purposes.
+
+---
+
 ## ⚠️ Limitations
 
 - Dataset bias towards specific news domains  
