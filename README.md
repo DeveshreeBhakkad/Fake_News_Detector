@@ -1,125 +1,145 @@
-# Fake_News_Detector
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Project-Complete-success)
 
-📰 Fake News Detector
+# 📰 Fake News Detection using NLP & Deep Learning
 
 > “Don’t believe everything you read — let AI tell you the truth.”
 
-A Python-based machine learning application that detects whether a news article is real or fake using Natural Language Processing (NLP) and classification models.
-Train, test, and evaluate your dataset — all from a simple, powerful terminal interface.
+Detecting fake news articles using Natural Language Processing (NLP) and Deep Learning techniques.
 
-✨ **Features**
+This project focuses on classifying news articles as **REAL** or **FAKE** based on their textual content. It demonstrates an end-to-end machine learning workflow including data preprocessing, exploratory data analysis, model building, and evaluation.
 
-- 🔑 User Authentication – Register & login securely (passwords hashed with bcrypt)  
-- 💵 Income & Expense Tracking – Add, view, and delete transactions with categories  
-- 📊 Reports – Generate Monthly & Yearly summaries (Income, Expenses, Savings)  
-- 🎯 Budgeting – Set monthly budgets & receive warnings if exceeded  
-- 💾 Data Persistence – All data stored in SQLite database  
-- 🗄 Backup & Restore – Create timestamped backups & restore anytime  
+---
 
+## 📌 Problem Statement
 
-📂 **Project Structure**
+Fake news spreads rapidly through digital platforms and can significantly impact public opinion, politics, and society. Manual verification is slow and error-prone.
 
-```
-Fake_News_Detector/
-│── main.py               # Main script (run this file)
-│── dataset.csv           # News dataset (optional / to be added)
-│── model/                # Saved model files (after training)
-│── graphs/               # Visualizations & plots
-│── README.md             # Project documentation
-└── requirements.txt      # Python dependencies
-```
+This project aims to build an automated system that:
+- Analyzes news article text
+- Learns linguistic patterns of fake vs real news
+- Predicts whether a given article is **REAL** or **FAKE**
 
+---
 
-## 🛠 Installation & Setup
+## 🎯 Project Objectives
 
-1️⃣ Clone the repository:
+- Perform text cleaning and preprocessing using NLP techniques  
+- Explore and visualize patterns in real and fake news data  
+- Build a Deep Learning model using **Bidirectional LSTM**  
+- Evaluate model performance using standard ML metrics  
+- Identify limitations and scope for future improvements  
 
+---
+
+## 📂 Dataset Description
+
+The dataset consists of two CSV files:
+
+- **True.csv** – Contains real news articles  
+- **Fake.csv** – Contains fake news articles  
+
+Each record includes:
+- `title` – News headline  
+- `text` – Full article content  
+- `subject` – Topic/category of the article  
+
+A binary label is created:
+- `1` → Real News  
+- `0` → Fake News  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python  
+- **Libraries:**
+  - NLP: `nltk`, `gensim`, `wordcloud`
+  - Data Processing: `pandas`, `numpy`
+  - Visualization: `matplotlib`, `seaborn`, `plotly`
+  - Machine Learning: `scikit-learn`
+  - Deep Learning: `TensorFlow (Keras)`
+
+---
+
+## 🔄 Project Workflow
+
+1. Data loading and labeling  
+2. Text preprocessing (tokenization, stopword removal, cleaning)  
+3. Exploratory Data Analysis (EDA)  
+4. Feature engineering and sequence padding  
+5. Model building using Bidirectional LSTM  
+6. Model training with validation split  
+7. Model evaluation using test data  
+
+---
+
+## 🧠 Model Architecture
+
+- Embedding Layer  
+- Bidirectional LSTM Layer  
+- Dense Fully Connected Layers  
+- Sigmoid Activation for binary classification  
+
+---
+
+## 📊 Results
+
+- The model achieves high training accuracy  
+- Test accuracy is lower, indicating possible overfitting  
+- Confusion matrix is used to analyze classification performance  
+
+> Note: Accuracy alone is not sufficient for real-world fake news detection. Additional evaluation metrics are required.
+
+---
+
+## ⚠️ Limitations
+
+- Dataset bias towards specific news domains  
+- Limited generalization to social media or short text  
+- Overfitting due to model complexity  
+- No real-time or production deployment yet  
+
+---
+
+## 🚀 Future Improvements
+
+- Add baseline ML models (Logistic Regression, Naive Bayes)  
+- Compare classical ML vs deep learning approaches  
+- Use Precision, Recall, and F1-Score for evaluation  
+- Implement model explainability techniques  
+- Deploy the model as a web application  
+- Test performance on real-world news data  
+
+---
+
+## ▶️ How to Run the Project
+
+### 1. Clone the repository
 ```bash
-git clone https://github.com/DeveshreeBhakkad/Finance-Management-Application.git
-cd finance_manager
+git clone <repository-url>
+cd Fake_News_Detection
 ```
 
-2️⃣ Install dependencies
+2. Install dependencies
 ```bash
-       pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-Or install manually:
+
+3. Run the project
 ```bash
-       pip install tensorflow nltk pandas numpy matplotlib scikit-learn
+python main.py
 ```
-3️⃣ Run the project
-```bash
-       python main.py
-```
-## 🎮 Usage Guide
 
-- 🧩 **Training**  
-  Automatically preprocesses data (cleaning, stemming, vectorizing).  
-  Trains ML models and saves them as `.pkl` files.  
+👩‍💻 Author
 
-- 🔍 **Prediction**  
-  Enter a news headline or paragraph.  
-  The system predicts whether it’s **REAL** or **FAKE**.  
+Deveshree Bhakkad
+Final Year AIML Student
+Interested in Machine Learning, NLP, and Applied AI
 
-- 📊 **Model Evaluation**  
-  Displays accuracy score.  
-  Shows confusion matrix and precision–recall metrics.  
+⭐ Conclusion
 
-
-🧩 How It Works
-
-1. Data Loading – Loads dataset containing news articles and labels (real/fake).
-2. Data Cleaning – Removes stopwords, punctuation, and performs tokenization + lemmatization.
-3. Exploratory Data Analysis (EDA) – Visualizes fake vs real news counts, word counts, and subjects.
-4. Model Building – Uses Embedding Layer + Bidirectional LSTM + Dense layers for classification.
-5. Training – Runs for multiple epochs with validation split.
-6. Evaluation – Displays accuracy, loss, confusion matrix, and performance metrics.
-
-
-
-## 📊 Sample Visualizations
-
-- 🟦 **Distribution of Fake vs Real News**  
-- 🟩 **Number of Articles per Subject**  
-- 🟨 **Word Count per Article**  
-- 📉 **Training vs Validation Accuracy Graph**  
-
-_All these visualizations are generated during runtime using Matplotlib._
-
-
-## 🧮 Example Output
-
-Epoch 1/5
-```bash
-acc: 0.9877 - loss: 0.0330 - val_acc: 0.9989 - val_loss: 0.0044
-```
-Epoch 2/5
-```bash
-acc: 0.9991 - loss: 0.0011 - val_acc: 0.9998 - val_loss: 0.0023
-```
-Final Model Accuracy: 80%
+This project represents a step toward building industry-ready NLP systems.
+Future versions will focus on improving generalization, explainability, and deployment readiness.
 
 
 ---
 
-## 🔒 Notes
-
-Make sure NLTK data packages are downloaded before running:
-
-```python
-import nltk  
-nltk.download('punkt')  
-nltk.download('stopwords')  
-nltk.download('wordnet')  
-nltk.download('punkt_tab')
-```
-⚠️ If TensorFlow shows oneDNN optimization warnings — it’s safe to ignore.
-
-🌟 Future Improvements
-- 🧾 Save model and use it for real-time fake news prediction
-- 🌐 Deploy as a web app (Flask/Streamlit)
-- 📄 Add dataset link or upload to Kaggle
-- 📊 Add more visualizations and performance comparisons
